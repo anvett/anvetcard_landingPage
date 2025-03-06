@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname(); // Obtén la ruta actual
 
   return (
-    <div className="navbar bg-gradient-primary text-size-3 px-4 flex items-center justify-between relative z-50 border-b-2 border-light ">
+    <div className="navbar bg-primary text-size-3 px-4 flex items-center justify-between relative z-50 border-b-2 border-light ">
       <div className="flex items-center space-x-4">
         <div className="dropdown">
           <label
@@ -37,18 +37,23 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link className="text-light" href="#info_pago">
-                Info. Pago
+              <Link className="text-light" href="#ventajas">
+                Ventajas
               </Link>
             </li>
             <li>
-              <Link className="text-light" href="#productos">
-                Productos y servicios
+              <Link className="text-light" href="#contenido">
+                Contenido
               </Link>
             </li>
             <li>
-              <Link className="text-light" href="#curriculum">
-                CV
+              <Link className="text-light" href="#pricing">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link className="text-light" href="#contacto">
+                Contacto
               </Link>
             </li>
           </ul>
@@ -68,7 +73,7 @@ const Navbar = () => {
           <li>
             <Link
               className={`nav-link ${
-                pathname === "/" ? "text-dark" : "text-light"
+                pathname === "/" ? "text-light" : "text-light"
               }`}
               href="#inicio"
             >
@@ -79,33 +84,43 @@ const Navbar = () => {
           <li>
             <Link
               className={`nav-link ${
-                pathname === "/faqs" ? "text-terciary" : "text-light"
+                pathname === "ventajas" ? "text-light" : "text-light"
               }`}
-              href="#info_pago"
+              href="#ventajas"
             >
-              Info. Pago
+              Ventajas
             </Link>
           </li>
           <li>
             <Link
               className={`nav-link ${
-                pathname === "/simulador-credito"
-                  ? "text-terciary"
+                pathname === "contenido"
+                  ? "text-light"
                   : "text-light"
               }`}
-              href="#productos"
+              href="#contenido"
             >
-              Productos y servicios
+              Contenido
             </Link>
           </li>
           <li>
             <Link
               className={`nav-link ${
-                pathname === "/contacto" ? "text-terciary" : "text-light"
+                pathname === "pricing" ? "text-light" : "text-light"
               }`}
-              href="#curriculum"
+              href="#pricing"
             >
-              CV
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`nav-link ${
+                pathname === "#contacto" ? "text-light" : "text-light"
+              }`}
+              href="#contacto"
+            >
+              Contacto
             </Link>
           </li>
         </ul>
