@@ -258,19 +258,22 @@ const faqEntries = [
 const testimonials=[
   {
     name: "Lic. María Emilia Arias",
+    charge: "Pisociloga Clínica",
     feedback: "AnvetCard ha cambiado la forma en que comparto mi información. ¡Muy recomendable!",
     image: "/assets/images/testimonials/maemilia-arias.png",
     cardLink: "https://maemiliaarias.anvetcard.com"
   },
   {
     name: "Msc. Erika Veintimilla",
+    charge: "Gerente de Likeate Digital",
     feedback: "Excelente solución para profesionales. Ahora mis clientes pueden contactarme fácilmente.",
     image: "/assets/images/testimonials/erika-veintimilla.jpg",
     cardLink: "https://erickaveintimilla.anvetcard.com"
   },
   {
     name: "Wellinton LLanos",
-    feedback: "AnvetCard ha cambiado la forma en que comparto mi información. ¡Muy recomendable!",
+    charge: "Manager de Ecuacleaner",
+    feedback: "AnvetCard ha sido una herramienta muy útil para mi negocio. ¡Gracias!",
     image: "/assets/images/testimonials/wllanos.jpg",
     cardLink: "https://wllanos.ecuacleanerinc.com/"
   },
@@ -424,8 +427,8 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-spacing-8">
           <PricingCard
             planName="Plan Standard"
-            price="$65.00"
-            period="No caducan"
+            price="$69.00"
+            period="Renovación anual 10.00 usd"
             features={[
               "Tarjeta digital web",
               "Botones de contacto",
@@ -436,6 +439,8 @@ export default function Home() {
               "Educación y Experiencia laboral",
               "Información de pago",
               "Tarjeta NFC",
+              "Diseño personalizable",
+              "10 Actualizaciones al año",
               "Soporte 24/7",
             ]}
             buttonText="¡Suscríbete ahora!"
@@ -444,12 +449,12 @@ export default function Home() {
           />
           <PricingCard
             planName="Plan Premium"
-            price="Desde $85.00"
-            period="No caducan"
+            price="Desde $89.00"
+            period="Renovación anual 18.00 usd"
             features={[
               "Todos los beneficios del plan Standard",
-              "Llamador acrílico personalizado",
               "Mayor espacio para imágenes y videos",
+              "Formulario de contacto personalizado",
               "20% de descuento en la creación de un sitio web",
               "Soporte 24/7",
               "Entrega sin costo adicional",

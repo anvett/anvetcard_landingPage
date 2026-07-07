@@ -30,7 +30,8 @@ const TestimonialCard = ({ testimonials }) => {
                   <h3 className="text-lg font-semibold text-primary">{testimonial.name}</h3>
                 </div>
               </div>
-              <p className="text-gray-700 mb-4">{testimonial.feedback}</p>
+              <p className="text-gray-800 mb-4">{testimonial.charge}</p>
+              <p className="text-gray-600 mb-4">{testimonial.feedback}</p>
               <a
                 href={testimonial.cardLink}
                 className="text-primary font-semibold hover:underline"

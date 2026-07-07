@@ -20,7 +20,7 @@ export const metadata = {
     url: "https://www.anvetcard.com",
     images: [
       {
-        url: "https://www.anvetcard.com/assets/images/sharedimage.jpg",
+        url: "https://anvetcard.com/assets/images/logo.jpg",
         alt: "AnvetCard Logo",
         width: 1200,
         height: 630,
